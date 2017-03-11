@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dork.Dal.Core\Dork.Dal.Core.csproj" />
+    <ProjectReference Include="..\Dork.Dal.FireBase\Dork.Dal.FireBase.csproj" />
+    <ProjectReference Include="..\Dork.Models\Dork.Models.csproj" />
+    <ProjectReference Include="..\Dork.Services.Core\Dork.Services.Core.csproj" />
+    <ProjectReference Include="..\Dork.Services.Messages.Models\Dork.Services.Messages.Models.csproj" />
+    <ProjectReference Include="..\Dork.Services.Messages\Dork.Services.Messages.csproj" />
+    <ProjectReference Include="..\Dork.Services.Profiles.Models\Dork.Services.Profiles.Models.csproj" />
+    <ProjectReference Include="..\Dork.Services.Profiles\Dork.Services.Profiles.csproj" />
+  </ItemGroup>
+
+</Project>

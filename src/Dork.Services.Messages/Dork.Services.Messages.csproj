@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dork.Dal.Core\Dork.Dal.Core.csproj" />
+    <ProjectReference Include="..\Dork.Models\Dork.Models.csproj" />
+    <ProjectReference Include="..\Dork.Services.Messages.Models\Dork.Services.Messages.Models.csproj" />
+  </ItemGroup>
+
+</Project>
